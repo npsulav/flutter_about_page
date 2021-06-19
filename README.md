@@ -3,6 +3,8 @@
 Create an awesome About Page for your Flutter App in 2 minutes<br>
 This package is highly inspired from <a href="https://github.com/medyo/android-about-page">android_about_page</a><br>
 
+<img src="https://raw.githubusercontent.com/npsulav/npsulav/main/Flutter%20About%20Page.png" width="80%" alt="Flutter About Page Cover"/>
+
 # Setup
 
 Import the flutter_about_page package.
