@@ -6,7 +6,6 @@ class AboutPage {
   String descFontFamily = "Roboto";
   String listTextFontFamily = "RobotoMedium";
 
-
   // All the properties of AboutPage library
   customStyle(
       {descFontFamily = "Roboto", listTextFontFamily = "RobotoMedium"}) {
@@ -99,7 +98,7 @@ class AboutPage {
         },
         child: addItemWidget(
             FaIcon(
-              FontAwesomeIcons.facebookSquare,
+              FontAwesomeIcons.squareFacebook,
               color: Color(0xff3b5998),
             ),
             "Like on Facebook"));
@@ -112,7 +111,7 @@ class AboutPage {
         },
         child: addItemWidget(
             FaIcon(
-              FontAwesomeIcons.twitterSquare,
+              FontAwesomeIcons.squareXTwitter,
               color: Colors.blue,
             ),
             "Follow us on Twitter"));
@@ -170,7 +169,7 @@ class AboutPage {
             "Follow us on Instagram"));
   }
 
-  void _launchURL(_url) async => await canLaunch(_url)
-      ? await launch(_url)
+  void _launchURL(_url) async => await canLaunchUrl(_url)
+      ? await launchUrl(_url)
       : throw 'Could not launch $_url';
 }
